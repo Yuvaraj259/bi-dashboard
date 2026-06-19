@@ -37,7 +37,7 @@ node server.js
 ```
 
 ### 4. Open in browser
-Visit: **http://localhost:3000**
+Visit: https://bi-dashboard-w9ba.onrender.com/
 
 ---
 
