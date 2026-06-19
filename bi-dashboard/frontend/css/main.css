@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --bg: #030306;
+  --bg: #0b132b;
   --surface: rgba(18, 18, 29, 0.65);
   --surface-hover: rgba(30, 30, 45, 0.8);
   --surface2: #0c0c14;

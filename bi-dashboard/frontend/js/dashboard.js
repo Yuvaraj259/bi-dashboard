@@ -2,8 +2,8 @@ const Dashboard = {
   chartInstances: {},
 
   COLORS: [
-    '#6c63ff','#ff6584','#43e97b','#ffd166','#06d6a0','#118ab2','#ef476f','#ffd166',
-    '#8338ec','#fb5607','#3a86ff','#06d6a0'
+    '#63d8ffff', '#ff6584', '#43e97b', '#a28236ff', '#06d6a0', '#118ab2', '#ef476f', '#ffd166',
+    '#8338ec', '#fb5607', '#3a86ff', '#06d6a0'
   ],
 
   render() {
@@ -23,9 +23,8 @@ const Dashboard = {
       const { charts, stats, totalFiles, totalRows } = await Api.get('/dashboard/analytics');
 
       // Destroy old chart instances
-      Object.values(this.chartInstances).forEach(c => { try { c.destroy(); } catch {} });
+      Object.values(this.chartInstances).forEach(c => { try { c.destroy(); } catch { } });
       this.chartInstances = {};
-
       this.renderStats(stats, totalFiles, totalRows);
 
       if (!charts.length) {
@@ -83,8 +82,8 @@ const Dashboard = {
       plugins: {
         legend: { labels: { color: '#7a7a9a', font: { family: 'DM Sans', size: 11 }, boxWidth: 12 } },
         tooltip: {
-          backgroundColor: '#1a1a26',
-          borderColor: '#2a2a3d',
+          backgroundColor: '#bb1d6cff',
+          borderColor: '#60050aff',
           borderWidth: 1,
           titleColor: '#e8e8f0',
           bodyColor: '#7a7a9a',

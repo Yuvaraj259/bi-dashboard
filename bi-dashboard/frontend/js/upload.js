@@ -9,7 +9,7 @@ const Upload = {
 
   fileBg(name) {
     const ext = (name.split('.').pop() || '').toLowerCase();
-    const map = { csv: 'rgba(67,233,123,0.1)', xlsx: 'rgba(67,233,123,0.1)', json: 'rgba(108,99,255,0.1)', pdf: 'rgba(255,101,132,0.1)' };
+    const map = { csv: 'rgba(82, 90, 197, 0.39)', xlsx: 'rgba(67,233,123,0.1)', json: 'rgba(108,99,255,0.1)', pdf: 'rgba(255,101,132,0.1)' };
     return map[ext] || 'rgba(108,99,255,0.08)';
   },
 
@@ -23,7 +23,7 @@ const Upload = {
     return `
     <div class="page-header">
       <div class="page-title">Upload Data</div>
-      <div class="page-subtitle">Import any file — CSV, Excel, JSON, TXT, PDF, images, and more</div>
+      <div class="page-subtitle">Import any file — CSV, Excel, JSON, TXT, PDF, images and more</div>
     </div>
 
     <div class="drop-zone" id="drop-zone">
